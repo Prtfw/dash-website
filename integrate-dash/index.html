@@ -1,0 +1,119 @@
+---
+layout: default
+title: pages.home.title
+description: pages.home.description
+---
+
+
+{% include hero/integrate-dash.html %}
+
+<div class="page page--home">
+
+	<!--
+		WHAT IS DASH?
+		LINK TO VIDEO.
+	-->
+	<section class="section section--home-cta">
+		<div class="section__content">
+				<h2 class="section__title">{% t pages.home.video-heading %}</h2>
+				<div class="section__lead">{% tmd pages.home.video-text %}</div>
+
+				<div class="section__btn-grp">
+	
+					<a href="https://www.youtube.com/watch?v=S0oNO3mbBE8" class="btn-blue btn-large" target="_blank" data-js-popup="video">{% t pages.home.video-btn %}</a>
+					<a href="{{ basenav }}/get-dash/" class="btn-blue-solid btn-large">{% t nav.download %}</a>
+				</div>
+		</div>
+	</section>
+
+	<!--
+		Hosted Services
+	-->
+	<section class="section--masternode">
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>{% t pages.integrate-dash.host-heading %}</h2>
+
+					{% tmd pages.integrate-dash.host-text %}
+					<p>
+						<ul>
+							<li> &#8227 ~1% Transaction Processing Fees</li>
+							<li> &#8227 Quick and Easy Setup</li>
+						</ul>
+					</p>
+					<a href="{{base}}/payments" target="_blank" class="btn-blue">{% t pages.home.architecture-btn %}</a>
+				</div>
+				<div class="col-sm-6 home-architecture-graphic">
+					<img src="/assets/img/home/globe.png" alt="{% t pages.home.architecture-heading %}" style="max-height: 200%; width: auto;">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		SELF Hosted
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-6">
+					<h2>{% t pages.integrate-dash.self-heading%}</h2>
+
+					{% tmd pages.integrate-dash.self-text %}
+					
+					<p>
+						<ul>
+							<li> &#8227 0% Transaction Processing Fees</li>
+							<li> &#8227 Flat monthly cost for Infrastructure (typically ~ $10 per month)</li>
+							<li> &#8227 Server Configuration Required</li>
+						</ul>
+					</p>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/Dash+Payment+Processor+Overview " target="_blank" class="btn-blue"> Learn More </a>
+				</div>
+				<div class="col-sm-6 col-sm-pull-6 home-budgets-graphic">
+					<img src="http://www.zenbackup.com.au/includes/images/Public%20Cloud.png" alt="" style="max-height: 110%; width: auto;">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--
+		INSTASend
+	-->
+	<section>
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>{% t pages.integrate-dash.instasend-heading %}</h2>
+
+					{% tmd pages.integrate-dash.instasend-text %}
+					
+					<a href="#" class="btn-blue" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/HJx82On8jig">How does it work?</a>
+					<a href="https://dashpay.atlassian.net/wiki/display/DOC/InstantSend+Integration" class="btn-blue">Technical Information</a>
+
+				</div>
+				<div class="col-sm-6 home-network-graphic-live">
+					<img src="/assets/img/hero/merchants.png" alt="{% t pages.home.network-growth-heading %}" style="max-height: 110%; width: auto;">
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+<!--video modal-->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div>
+          <iframe width="90%" height=auto src=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--video modal end-->
