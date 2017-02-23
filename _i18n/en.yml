@@ -253,9 +253,14 @@ pages:
     payments-providers-subtitle: 
     
   integrate-dash:
-    title: Integrate Dash
-    hero-heading: Integrate Dash
-    hero-text: Become your own bank; stop paying high credit card and paypal fees and take control of your cash flow by accepting Dash as a payment method.
+    title: Integrate with Dash
+    hero-heading: Integrate with Dash
+    hero-text: Take control of your cash flow and step into the future of E-Commerce
+    summary-heading: Dash is Digital Cash for E-Commerce
+    summary-text: Instant. Secure. Zero Fee.
+    summary-btn1: Hosted Services
+    summary-btn2: Self-Hosted
+    summary-btn3: InstantSend
     host-heading: Hosted Services
     host-text: Hosted services provide a quick and easy way to begin accepting Dash as a payment method.
     self-heading: Self-Hosted
